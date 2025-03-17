@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background and text color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #842fa7;
+    color: white;
+}
+
+/* Header Styles */
+.header {
+    background-color: #df91ff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Space between header content */
+    align-items: center; /* Center items vertically */
+}
+
+/* Header Title */
+.header h1 {
+    font-size: 2.5em;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    display: flex; /* This makes the list horizontal */
+}
+
+nav ul li {
+    margin-left: 30px; /* Spacing between items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Tomato color for hover effect */
+}
+
+/* Main Section Styles */
+main {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 5px;
+}
+
+section p {
+    font-size: 1.0em;
+    line-height: 1.6;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    color:  white;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #df91ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    font-size: 1em;
+}
