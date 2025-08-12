@@ -1,5 +1,9 @@
 <?php
 // Connect to the database
+foreach (parse_ini_file('.env') as $key => $value) {
+  $_ENV[$key] = $value;
+}
+
 $conn = new mysqli($_ENV["DB_HOST"], $_ENV["DB_USERNAME"], $_ENV["DB_PASSWORD"], $_ENV["DB_NAME"]);
 
 if ($conn->connect_error) {
@@ -19,12 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $sql = "INSERT INTO sections (title, description) VALUES ('$title', '$description')";
         if ($conn->query($sql) === TRUE) {
-            $message = "✅ Section added successfully.";
+            $message = "Section added successfully.";
         } else {
-            $message = "❌ Error: " . $conn->error;
+            $message = "Error: " . $conn->error;
         }
     } else {
-        $message = "❌ Please fill in all fields.";
+        $message = "Please fill in all fields.";
     }
 }
 
